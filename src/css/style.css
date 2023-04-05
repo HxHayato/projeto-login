@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagem {
+    background-color: #F7FAFC;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img{
+    width: auto;
+}
+
+.container-login {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 60%;
+    height: 89%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saudacao {
+    color: #1A202C;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.login h1 {
+    color: #1A202C;
+    width: 100%;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+form {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    color: #1A202C;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+form input {
+    padding: 15px;
+    color: #1A202C;
+    width: 100%;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.lembre-esqueceu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lembre-esqueceu span {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lembra {
+    width: auto;
+    height: auto;
+}
+
+.lembre-esqueceu span label {
+    color: #1A202C;
+    margin: 0 0 0 5px;
+}
+
+.lembre-esqueceu a {
+    color: #2B6CB0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+form [type="submit"] {
+    background-color: #04C35C;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    background-color: #04c35ddc;
+}
+
+.login-google {
+    margin-top: 20px;
+    background-color: #1A202C;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-google:hover {
+    background-color: #1a202cea;
+}
+
+.login-google img {
+    width: 35px;
+}
+
+.registro {
+    margin: 3% 0;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro p {
+    color: #1A202C;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.registro p span a{
+    margin-left: 5px;
+    color: #2B6CB0;
+}
+
+@media Screen and (max-width: 1115px) {
+    .login {
+        width: 70%;
+    }
+}
+
+@media Screen and (max-width: 940px) {
+    .login {
+        width: 80%;
+    }
+}
+
+@media Screen and (max-width: 900px) {
+    .imagem {
+        display: none;
+    }
+
+    .container-login {
+        width: 100%;
+    }
+
+    .login {
+        width: 80%;
+    }
+}
